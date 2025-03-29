@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import 'remixicon/fonts/remixicon.css';
+
+.moving img{
+    width: 100px;
+    height: 80px;
+}
+
+@font-face {
+    font-family: neue;
+    src: url('./font/Neue\ Machina.woff') format('woff');
+    /* src: url('/scrolling\ text\ animation/NeueMachina.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+}

@@ -7,13 +7,31 @@ import { useGSAP } from '@gsap/react';
 const Nav = () => {
     useGSAP(() => {
         const tl = gsap.timeline();
-        tl.from(".navpart1 , .navpart2" , {
-            y:-40,
-            opacity:0,
-            delay:0.3,
-            duration:0.7,
+        tl.from(".navpart1", {
+            y: -40,
+            opacity: 0,
+            delay: 0.3,
+            duration: 0.7,
+            ease: "power2.out"
         })
-        
+
+        tl.from(".navpart2 h4", {
+            y: -40,
+            opacity: 0,
+            delay: 0.3,
+            duration: 0.7,
+            stagger: 0.3,  
+            ease: "power2.out"
+        })
+
+        tl.from(".navpart2 button", {
+            opacity: 0,
+            scale: 0.8,
+            duration: 0.7,
+            delay: 0.2, 
+            ease: "power2.out"
+        })
+
     })
     return (
         <div className='flex px-[70px] py-[15px] justify-between items-center font-semibold'>

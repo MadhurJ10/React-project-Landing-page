@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Card = (param) => {
-    console.log(param)
     return (
     <div className={` w-[540px] h-[200px] flex shrink-0 border rounded-2xl text-2xl px-[45px] py-[30px] justify-between shadow-[0px_15px_0px_black]`}>
             <div className='cardleft flex flex-col justify-between'>
